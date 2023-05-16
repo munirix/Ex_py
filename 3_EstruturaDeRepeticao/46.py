@@ -43,12 +43,12 @@ while True:
     saltos = saltos[1:-1]
     media = sum(saltos) / 3
 
-    print('Melhor salto: %.2f m' % melhor)
+    print('\nMelhor salto: %.2f m' % melhor)
     print('Pior salto: %.2f m' % pior)
     print('Média dos demais saltos: %.2f m' % media)
 
-    print('Resultado final')
-    print('%s: %.2f' % (nome, media))
+    print('\nResultado final')
+    print('%s: %.2f\n' % (nome, media))
     
     
     
