@@ -9,7 +9,7 @@ informar:
 Maior e Menor Acerto;
 Total de Alunos que utilizaram o sistema;
 A Média das Notas da Turma.
-
+n
 Gabarito da Prova:
 01 - A
 02 - B
