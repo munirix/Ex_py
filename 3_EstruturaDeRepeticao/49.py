@@ -10,8 +10,12 @@ numero = int(input('Informe a quantidade de termos: '))
 
 seq, soma = 1, 0
 for i in range(1, numero + 1):
+    if i == numero:
+        print(f'{i}/{seq}',end=' ')
+    else:
+        print(f'{i}/{seq}',end=' + ')
     soma += i / seq
     seq += 2
 
-print('Total da sequência: %.2f ' % soma)
+print('\nTotal da sequência: %.2f ' % soma)
 
