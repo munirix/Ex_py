@@ -29,11 +29,11 @@ for i in range(1, 11):
         numeroBaixo = numero
         alturaBaixo = altura
 
-print('Aluno mais Alto')
+print('\nAluno mais Alto')
 print('Número do aluno: %d' % numeroAlto)
 print('Altura do aluno: %d' % alturaAlto)
 
-print('Aluno mais Baixo')
+print('\nAluno mais Baixo')
 print('Número do aluno: %d' % numeroBaixo)
 print('Altura do aluno: %d' % alturaBaixo)      
         
@@ -43,4 +43,3 @@ print('Altura do aluno: %d' % alturaBaixo)
     
     
     
-
