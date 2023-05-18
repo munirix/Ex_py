@@ -24,7 +24,7 @@ print('3 / Maria')
 print('4 / Raquel')
 print('5 / Voto Nulo')
 print('6 / Voto em Branco')
-print('Digite 0 para finalizar')
+print('Digite 0 para finalizar\n')
 
 cont1 = 0
 cont2 = 0
@@ -51,14 +51,14 @@ while True:
         branco += 1
     total += 1
         
-print('Total de votos para José: %d' % cont1)
+print('\nTotal de votos para José: %d' % cont1)
 print('Total de votos para João: %d' % cont2)
 print('Total de votos para Maria: %d' % cont3)
 print('Total de votos para Raquel: %d' % cont4)
 
 print('Total de votos Nulo: %d' % nulo)
 print('Total de votos em Branco: %d ' % branco)
-print('Percentual de votos nulos: %.2f%%' % (nulo / total * 100))
+print('\nPercentual de votos nulos: %.2f%%' % (nulo / total * 100))
 print('Percentual de votos em branco: %.2f%%' % (branco / total * 100))
     
     
