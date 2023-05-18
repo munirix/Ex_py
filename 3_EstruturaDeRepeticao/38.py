@@ -13,11 +13,18 @@ programa permitindo que o usuário digite o salário inicial do funcionário.
 salario = 1000
 aumento = 1.5
 ano = 1996
-
-for i in range(ano, 2017):
-    print('Salário no ano %d = %.2f, aumento de %.2f' % (i, salario, aumento))
-    salario += ((salario * aumento) / 100)
-    aumento *= 2
-
-print('Salário atual: %.2f' % salario)
-
+while True:
+    for i in range(ano, 1999):
+        print('Salário no ano %d = %.2f, aumento de %.2f' % (i, salario, aumento))
+        salario += ((salario * aumento) / 100)
+        aumento *= 2
+    
+    print('\nSalário atual: %.2f' % salario)
+    print('\n-------------\n')
+    proc=int(input('\nDeseja inserir um novo salario inicial?\nSe sim, digite 1\nSe não, digite 0\n'))
+    if proc == 1:
+        salario=0
+        aumento = 1.5
+        salario=int(input('\nInsira o salario inicial: '))
+    else:
+        break
