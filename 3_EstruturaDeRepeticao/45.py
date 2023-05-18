@@ -28,22 +28,28 @@ o gabarito da prova antes dos alunos usarem o programa.
 maior = 0
 menor = 0
 total = 0
-resp1 = input('Digite a resposta da 1º questão: ')
-resp2 = input('Digite a resposta da 2º questão: ')
-resp3 = input('Digite a resposta da 3º questão: ')
-resp4 = input('Digite a resposta da 4º questão: ')
-resp5 = input('Digite a resposta da 5º questão: ')
-resp6 = input('Digite a resposta da 6º questão: ')
-resp7 = input('Digite a resposta da 7º questão: ')
-resp8 = input('Digite a resposta da 8º questão: ')
-resp9 = input('Digite a resposta da 9º questão: ')
-resp10 = input('Digite a resposta da 10º questão: ')
 totalAcertos = 0
+
+print('\n-------------------------------\nGABARITO:\n')
+resp1 = input('Digite a resposta da 1º questão: ').upper()
+resp2 = input('Digite a resposta da 2º questão: ').upper()
+resp3 = input('Digite a resposta da 3º questão: ').upper()
+resp4 = input('Digite a resposta da 4º questão: ').upper()
+resp5 = input('Digite a resposta da 5º questão: ').upper()
+resp6 = input('Digite a resposta da 6º questão: ').upper()
+resp7 = input('Digite a resposta da 7º questão: ').upper()
+resp8 = input('Digite a resposta da 8º questão: ').upper()
+resp9 = input('Digite a resposta da 9º questão: ').upper()
+resp10 = input('Digite a resposta da 10º questão: ').upper()
+
+print('\n-------------------------------\nALUNOS:\n')
 while True:
     acertos = 0
     erros = 0
+    print('\nRespostas do %dº aluno\n'%(total+1))
     for i in range(1, 11):
-        resposta = input('Digite a resposta da %d questão: ' % i).upper()
+
+        resposta = input('Digite a resposta da %dº questão: ' % i).upper()
         if i == 1:
             if resp1 == resposta:
                 acertos += 1
@@ -102,7 +108,7 @@ while True:
         menor = acertos
     if acertos < menor:
         menor = acertos
-    continuar = int(input('Digite 0 para sair 1 para continuar: '))
+    continuar = int(input('\nDigite 0 para sair 1 para continuar: '))
     if continuar == 0:
         break
 print('Maior acerto %d' % maior)
