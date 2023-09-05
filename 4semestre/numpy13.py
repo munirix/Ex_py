@@ -43,3 +43,24 @@ def desvio_padrao(matriz):
 
 matriz_media_C = media(C)
 matriz_dp_C = desvio_padrao(C)
+
+# ============= outra forma (media)=================
+
+#row_mean = np.mean(C, axis=1) 
+  
+#row1_mean = row_mean[0] 
+#print("média da linha 1 é", row1_mean) 
+  
+#row2_mean = row_mean[1] 
+#print("média da linha 2 é", row2_mean) 
+  
+#row3_mean = row_mean[2] 
+#print("média da linha 3 é", row3_mean) 
+  
+#column_mean = np.mean(C, axis=0) 
+  
+#column1_mean = np.around(column_mean[0],2)
+#print("média da coluna 1 é", column1_mean) 
+  
+#column2_mean = np.around(column_mean[1],2)
+#print("média da coluna 2 é", column2_mean) 
